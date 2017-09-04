@@ -1,0 +1,130 @@
+{
+    /**
+     * 项目的命名空间
+     */
+    "name": "ChuangCai",
+    /**
+     * 项目起始html文件，路径相对于此app.json文件
+     */
+    "indexHtmlPath": "index.html",
+    /**
+     * 运行此项目的url路径，比如: "http://localhost/myapp/index.html".
+     *
+     *当设置此值时，将不能通过文件系统直接访问。
+     */
+    "url": null,
+    /**
+     * 所需引用js文件
+     * 单个格式如下
+     *      {
+     *          "path": "path/to/script.js" // 文件路径，如果本地文件，路径相对于此app.json文件
+     *          "remote": true              // (可选值)
+     *                                      // -默认值为"false"
+     *                                      // -"true"，如果这个文件是一个远程文件不会被复制
+     *          "update": "delta"           // (可选值)
+     *                                      // 如果没有指定，这个文件将只加载一次，
+     *										// 缓存到localStorage里面，直到这个值被改变。
+     *                                      //  - "delta" 增量更新此文件
+     *                                      //  - "full" 当文件改变时，完全更新此文件
+     *          "x-bootstrap": true         // (可选值)
+     *                                      // 表示这是项目依赖文件。
+     *                                      // 该文件不会被复制到生成目录或引用
+     *
+     *      }
+     */
+    "js": [{
+        "path": "lib/sencha-touch.js",
+        "x-bootstrap": true
+    },
+	{
+        "path": "lib/sencha-touch-all.js",
+        "x-bootstrap": true
+    },
+	{
+        "path": "lib/Dictionary.js",
+        "x-bootstrap": true
+    },
+    {
+        "path": "app.js",
+		/* 表示所有的类生成到这个文件 */
+        "bundle": true,
+        "update": "delta"
+    }],
+    /**
+     *所需引用css文件
+     * 单个格式如下
+     *      {
+     *          "path": "path/to/script.js" // 文件路径，如果本地文件，路径相对于此app.json文件
+     *          "remote": true              // (可选值)
+     *                                      // -默认值为"false"
+     *                                      // -"true"，如果这个文件是一个远程文件不会被复制
+     *          "update": "delta"           // (可选值)
+     *                                      // 如果没有指定，这个文件将只加载一次，
+     *										// 缓存到localStorage里面，直到这个文件被改变。
+     *                                      //  - "delta" 增量更新此文件
+     *                                      //  - "full" 当文件改变时，完全更新此文件
+     *
+     *      }
+     */
+    "css": [{
+        "path": "resources/css/sencha-touch.css",
+        "update": "delta"
+    },
+    {
+        "path": "resources/css/TouchCalendarView.css",
+        "update": "delta"
+    },
+	{
+        "path": "resources/css/skin1.css",
+        "update": "delta"
+    },{
+        "path": "resources/css/TouchCalendarEvents.css",
+        "update": "delta"
+    }
+	,{
+        "path": "resources/css/default.css",
+        "update": "delta"
+    }
+	,{
+        "path": "resources/css/blue.css",
+        "update": "delta"
+    }],
+    /**
+     *项目生成时用于自动生成HTML5应用程序缓存清单（cache.manifest）
+     */
+    "appCache": {
+        /**
+         * 本地缓存名单
+         */
+        "cache": ["index.html"],
+        /**
+         * 网络缓存名单
+         */
+        "network": ["*"],
+        /**
+         * FALLBACK缓存名单
+         */
+        "fallback": []
+    },
+    /**
+     * 项目生成时需要复制的资源文件,resources中文件夹不可以删除，否则会出错,里面的文件可以删除
+     */
+    "resources": ["resources/images", "resources/json"],
+    /**
+     * 项目生成时忽略的文件/目录名称匹配，必须是有效的正则表达式
+     */
+    "ignore": ["\.svn$"],
+    /**
+     * 之前生成项目储存目录，用于进行增量更新，不可随意改变此目录下的文件
+     */
+    "archivePath": "archive",
+    /**
+     * 在cmd创建时需要引用的类
+     */
+    "requires": [],
+    /**
+     * 唯一ID，作为localStorage前缀。
+     * 通常情况下，你不应该改变这个值。
+     */
+    "id": "d8504e05-a9fc-4692-bdbc-94c3190751f5"
+}

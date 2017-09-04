@@ -1,0 +1,68 @@
+{
+	"home" : {
+        "title" : "首頁",
+        "btnNews":"新聞中心",
+        "btnNotice":"公司公告",
+        "btnPersonalNews":"個人消息",
+        "btnBottomFirst" : "首頁",
+        "btnBottomPersonCenter" : "個人中心",
+        "btnBottomAbount" : "關於",
+        "btnBottomOther" : "其他"
+    },
+    "tabs" : {
+        "one"   : {
+            "html"  : "This is the first tab",
+            "title" : "First Tab"
+        },
+        "two"   : {
+            "html"  : "This is the second tab",
+            "title" : "Second Tab"
+        },
+        "three" : {
+            "html"  : "This is the third tab",
+            "title" : "Third Tab"
+        }
+    },
+    "pages" : {
+        "one" : {
+            "title" : "First Page"
+        },
+        "extra" : {
+            "title" : "Extra Page"
+        }
+    },
+    "buttons" : {
+        "cancel" : "Cancel1",
+        "save"   : "Save",
+        "done"   : "Done",
+        "addView": "Add View"
+    },
+    "misc" : {
+        "bottomTitle"   : "Bottom Toolbar",
+        "loadLocaleMsg" : "Loading...",
+        "back"          : "Back"
+    },
+    "fields" : {
+        "name" : "Name",
+        "dateLabel" : "Date",
+        "datePlaceholder" : "Choose Date"
+    }, 
+    "fieldsets" : {
+        "title" : "Fieldset Title",
+        "instructions" : "fieldset instructions"
+    },
+    "months" : {
+        "1"  : "January",
+        "2"  : "February",
+        "3"  : "March",
+        "4"  : "April",
+        "5"  : "May",
+        "6"  : "June",
+        "7"  : "July",
+        "8"  : "August",
+        "9"  : "September",
+        "10" : "October",
+        "11" : "November",
+        "12" : "December"
+    }
+}
